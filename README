@@ -1,0 +1,8 @@
+mucomment.vim
+
+Minimalistic code commenting plugin for VIM.
+Compatible with repeat.vim [https://github.com/tpope/vim-repeat]
+
+Default mappings:
+   <Leader>c -> comment
+   <Leader>C -> uncomment
