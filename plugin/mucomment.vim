@@ -3,7 +3,7 @@ let s:tokens = {}
 call extend(s:tokens, {'\"'  : ['vim']})
 call extend(s:tokens, {'--'  : ['haskell']})
 call extend(s:tokens, {'\/\/': ['javascript', 'java', 'c']})
-call extend(s:tokens, {'#'   : ['coffee', 'ruby', 'jproperties', 'sh', 'zsh']})
+call extend(s:tokens, {'#'   : ['coffee', 'ruby', 'jproperties', 'conf', 'sh', 'zsh']})
 
 function GetTokenFor(syntax)
    for [key, value] in items(s:tokens)
