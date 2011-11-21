@@ -27,7 +27,7 @@ noremap <silent><Plug>MuCommentDo :call <SID>do()<CR>
 function s:undo()
    let token = GetTokenFor(b:current_syntax)
    if token != "0"
-      exe 'silent!s/^'.token.'\ \?//'
+      exe 'silent!s/^\(\ *\)'.token.'\ \?/\1/'
       exe 'noh'
       silent! call repeat#set("\<Plug>MuCommentUndo",v:count)
    endif
